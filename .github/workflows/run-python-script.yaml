@@ -28,6 +28,7 @@ jobs:
           pwd
           ls -la
           cd app/
+          ls 
           chmod +x prime-number.py
           python3 prime-number.py
     
