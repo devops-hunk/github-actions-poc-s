@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: clone-repo
     steps:
+      - name: using git repository cloning actions..
+        uses: actions/checkout@v4
       - name: check python version..
         run: python3 --version
       - name: running-script
@@ -26,6 +28,6 @@ jobs:
           pwd
           ls -la
           cd app/
-          chmod +x greeting.py
+          chmod +x prime-number.py
           python3 prime-number.py
     
