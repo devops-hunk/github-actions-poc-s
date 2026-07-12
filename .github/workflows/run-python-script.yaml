@@ -12,3 +12,13 @@ jobs:
       run: |
         echo "listing files and folders.."
         ls -la
+        echo "repo sucessfully clone4d.."
+        
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check python version..
+        run: python3 --version
+      - name: running-script
+        run:  python3 app/prime-number.py
+    
