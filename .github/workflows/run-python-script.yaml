@@ -24,4 +24,7 @@ jobs:
         run: |
           echo "Current directory:"
           pwd
+          ls -la app/
+          cd app/
+          python3 prime-number.py
     
