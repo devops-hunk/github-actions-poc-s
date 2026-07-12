@@ -21,5 +21,7 @@ jobs:
       - name: check python version..
         run: python3 --version
       - name: running-script
-        run:  python3 app/prime-number.py
+        run: |
+          chmod 777  app/prime-number.py
+          python3 app/prime-number.py
     
