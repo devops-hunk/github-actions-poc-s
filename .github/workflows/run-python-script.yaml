@@ -1,0 +1,14 @@
+name: running-python-script
+on: workflow_dispatch
+
+jobs:
+  clone-repo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: using git repository cloning actions..
+      uses: actions/checkout@v4
+
+    - name: list all files
+      run: |
+        echo "listing files and folders.."
+        ls -la
