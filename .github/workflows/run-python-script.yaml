@@ -1,5 +1,11 @@
 name: running-python-script
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+   inputs:
+      number:
+        description: 'Enter a number'
+        required: true
+        default: '10'
 
 jobs:
   clone-repo:
