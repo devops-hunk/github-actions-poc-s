@@ -22,6 +22,6 @@ jobs:
         run: python3 --version
       - name: running-script
         run: |
-          chmod 777  app/prime-number.py
-          python3 app/prime-number.py
+          echo "Current directory:"
+          pwd
     
