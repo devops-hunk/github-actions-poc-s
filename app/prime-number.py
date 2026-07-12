@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 l = [10, 20, 30, 15, 20, 25, 26]
 
 dict = {}
