@@ -24,7 +24,7 @@ jobs:
         run: |
           echo "Current directory:"
           pwd
-          ls -la app/
+          ls -la
           cd app/
           chmod +x greeting.py
           python3 prime-number.py
