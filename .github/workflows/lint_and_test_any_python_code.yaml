@@ -23,6 +23,7 @@ jobs:
       - name: Run pylint
         run: |
           cd calculator_project
+          pylint --disable=C0114,C0115,C0116 *.py
           pylint $(find . -name "*.py")
 
   test:
