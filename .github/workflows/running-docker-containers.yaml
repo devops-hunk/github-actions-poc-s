@@ -13,3 +13,10 @@ jobs:
           echo "conatiners launched successfully"
           docker ps
           docker logs go-calc-frontend
+      - name: sleep_containers_for_10secs
+        run: sleep 10
+      - name: trying to access now..
+        run: curl localhot:80
+
+    
+      
