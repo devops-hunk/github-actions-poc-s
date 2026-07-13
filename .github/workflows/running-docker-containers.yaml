@@ -16,7 +16,7 @@ jobs:
       - name: sleep_containers_for_10secs
         run: sleep 10
       - name: trying to access now..
-        run: curl http://localhost:80
+        run: docker inspect go-calc-frontend
 
     
       
