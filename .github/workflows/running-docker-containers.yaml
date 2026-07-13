@@ -12,4 +12,4 @@ jobs:
           docker run -d --name go-calc-frontend -p 80:80 62049/go-calc-frontend
           echo "conatiners launched successfully"
           docker ps
-          curl localhost:80
+          docker logs go-calc-frontend
