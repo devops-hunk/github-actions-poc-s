@@ -1,0 +1,8 @@
+name: Python CI
+
+on:
+  workflow_dispatch
+
+jobs:
+  quality-checks:
+    uses: ./.github/workflows/lint_and_test_any_python_code.yaml
