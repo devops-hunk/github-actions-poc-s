@@ -1,0 +1,13 @@
+name: run-docker-containers
+on:
+  workflow_dispatch:
+
+jobs:
+  run-containers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: running_containers..
+        run: |
+          docker --version
+          docker run -d --name go-calc-frontend -p 80:80 62049/go-calc-frontend
+          echo "conatiners launched successfully"
